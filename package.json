@@ -1,0 +1,23 @@
+{
+  "name": "gme",
+  "version": "0.0.0",
+  "description": "modify gme tables from node",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "~1.2.4",
+    "google-auth2-service-account": "~0.0.3",
+    "request": "~2.34.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gme",
+    "google",
+    "maps",
+    "engine"
+  ],
+  "author": "",
+  "license": "MIT"
+}
