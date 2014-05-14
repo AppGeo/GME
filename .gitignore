@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+*~
+script.js
+style.css
+*.log
+*.p12
+config.json
+*.pem
