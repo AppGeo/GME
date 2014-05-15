@@ -1,4 +1,4 @@
-Google Maps Engine
+Google Maps Engine [![NPM version](https://badge.fury.io/js/gme.svg)](http://badge.fury.io/js/gme)
 ======
 
 Wrapper for doing crud operations on Google Maps Engine tables.
@@ -26,7 +26,7 @@ bulk.flush(); //-> success/failure
 
 the key parameter may either be the buffer contents of the key file or the string path to the keyfile
 
-email and tableID must be strings. 
+`email` and `tableID` must be strings. 
 
 For the features query see [this page](https://developers.google.com/maps-engine/documentation/read#queries) for query options.
 
@@ -34,7 +34,7 @@ For create and update takes an array of features per the [create](https://develo
 
 For remove an array of ids to delete is required.
 
-bulk is the only method that doesn't return a promice, but instead it reatures a bulk object, which has the same create update and remove methods that work the same way, the only difference is that they wait util they have the maximum number of features or or verticies and then does the upload in a batch.
+bulk is the only method that doesn't return a promise, but instead it returns a bulk object, which has the same create update and remove methods that work the same way, the only difference is that they wait util they have the maximum number of features or verticies and then does the upload in a batch.
 
 i.e. `bulk.create(feature);` the first 49 times will return a promise that resolves to `true` but the 50th time it is a promise for the bulk upload of all 50 features.
 
