@@ -2,7 +2,7 @@
   "name": "gme",
   "version": "0.0.0",
   "description": "modify google maps engine tables from node",
-  "main": "index.js",
+  "main": "./lib/",
   "dependencies": {
     "bluebird": "~1.2.4",
     "google-auth2-service-account": "~0.0.3",
