@@ -1,16 +1,19 @@
 {
   "name": "gme",
   "version": "0.0.0",
-  "description": "modify gme tables from node",
+  "description": "modify google maps engine tables from node",
   "main": "index.js",
   "dependencies": {
     "bluebird": "~1.2.4",
     "google-auth2-service-account": "~0.0.3",
     "request": "~2.34.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tap-spec": "^0.1.9",
+    "tape": "^2.13.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js | tspec"
   },
   "keywords": [
     "gme",
@@ -18,6 +21,14 @@
     "maps",
     "engine"
   ],
-  "author": "",
-  "license": "MIT"
+  "author": "Calvin Metcalf",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AppGeo/GME.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AppGeo/GME/issues"
+  },
+  "homepage": "https://github.com/AppGeo/GME"
 }
