@@ -8,7 +8,7 @@ No affliations with Google blah blah etc.
 All methods return promises
 
 ```javascript
-var GME = require('GME');
+var GME = require('gme');
 var table = new GME(key, email, tableID);
 
 table.info(); //-> info about the table
