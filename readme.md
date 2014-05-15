@@ -1,4 +1,4 @@
-Google Maps Engine
+Google Maps Engine [![NPM version](https://badge.fury.io/js/gme.svg)](http://badge.fury.io/js/gme)
 ======
 
 Wrapper for doing crud operations on Google Maps Engine tables.
