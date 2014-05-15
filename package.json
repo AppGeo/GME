@@ -6,7 +6,9 @@
   "dependencies": {
     "bluebird": "~1.2.4",
     "google-auth2-service-account": "~0.0.3",
-    "request": "~2.34.0"
+    "request": "~2.34.0",
+    "inherits": "^2.0.1",
+    "readable-stream": "~1.1.0"
   },
   "devDependencies": {
     "tap-spec": "^0.1.9",
