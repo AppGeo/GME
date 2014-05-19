@@ -9,6 +9,7 @@ All methods return promises
 
 ```javascript
 var GME = require('gme');
+GME.createTable(key, email, requestObj);
 var table = new GME(key, email, tableID);
 
 table.info(); //-> info about the table
@@ -59,3 +60,7 @@ i.e. `bulk.create(feature);` the first 49 times will return a promise that resol
 ## table.writeStream
 
 the `writeStream` method returns a writable stream, write objects with a `type` property with 'create', 'update', or 'remove' value and then a 'data' property with the object or string to put to the method (this can also be named 'key' if you want).
+
+## GME.createTable
+
+Similar to the table constructor but instead of a table ID takes a [table creation object](https://developers.google.com/maps-engine/documentation/table-create#table_create_requests).
