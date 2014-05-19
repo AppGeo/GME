@@ -1,6 +1,6 @@
 {
   "name": "gme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "modify google maps engine tables from node",
   "main": "./lib/",
   "dependencies": {
