@@ -3,7 +3,7 @@ Google Maps Engine [![NPM version](https://badge.fury.io/js/gme.svg)](http://bad
 
 Wrapper for doing crud operations on Google Maps Engine tables.
 
-No affliations with Google blah blah etc.
+No affiliations with Google blah blah etc.
 
 All methods return promises
 
