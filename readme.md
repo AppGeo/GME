@@ -14,7 +14,9 @@ var table = new GME(key, email, tableID);
 
 table.info(); //-> info about the table
 table.features(); //-> all the features
+table.readStream(); // -> same but read stream
 table.features(query); //-> filtered list
+table.readStream(query); // -> again same but with a read stream
 table.feature(id); //-> one feature
 table.create(array); //-> success/failure
 table.update(array); //-> success/failure
@@ -43,7 +45,6 @@ the key parameter may either be the buffer contents of the key file or the strin
 
 `email` and `tableID` must be strings. 
 
-For the features query see [this page](https://developers.google.com/maps-engine/documentation/read#queries) for query options.
 
 For create and update takes an array of features per the [create](https://developers.google.com/maps-engine/documentation/feature-create) and [update](https://developers.google.com/maps-engine/documentation/feature-update) docs.
 
@@ -64,3 +65,8 @@ the `writeStream` method returns a writable stream, write objects with a `type` 
 ## GME.createTable
 
 Similar to the table constructor but instead of a table ID takes a [table creation object](https://developers.google.com/maps-engine/documentation/table-create#table_create_requests).
+
+
+## table.features/table.readStream
+
+Either returns all the rows or a filtered set based on a query, the only difference is that features returns a promise while readStream returns a stream., see [this page](https://developers.google.com/maps-engine/documentation/read#queries) for query options. Note that table.features does the pagination for you, you don't need to worry about it.
