@@ -10,7 +10,7 @@ All methods return promises
 ```javascript
 var GME = require('gme');
 GME.createTable(key, email, requestObj);
-var table = new GME(key, email, tableID);
+var table = new GME(key, email, tableID, primaryKey);
 
 table.info(); //-> info about the table
 table.features(); //-> all the features
@@ -43,7 +43,7 @@ stream.write({
 
 the key parameter may either be the buffer contents of the key file or the string path to the keyfile
 
-`email` and `tableID` must be strings. 
+`email` and `tableID` must be strings, primary key is optional and defaults to gx_id. 
 
 
 For create and update takes an array of features per the [create](https://developers.google.com/maps-engine/documentation/feature-create) and [update](https://developers.google.com/maps-engine/documentation/feature-update) docs.
