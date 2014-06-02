@@ -1,0 +1,17 @@
+{
+  "max" : {
+    "featureTotal": 50,
+    "featureVertex": 100000,
+    "totalVertex": 100000
+  },
+  "unverified": {
+     "featureTotal": 50,
+    "featureVertex": 10000,
+    "totalVertex": 2000
+  },
+  "verified": {
+     "featureTotal": 50,
+    "featureVertex": 10000,
+    "totalVertex": 10000
+  }
+}
