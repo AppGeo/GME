@@ -5,7 +5,7 @@ Wrapper for doing crud operations on Google Maps Engine tables.
 
 No affiliations with Google blah blah etc.
 
-All methods return promises
+All methods return promises.
 
 ```javascript
 var GME = require('gme');
@@ -41,9 +41,12 @@ stream.write({
 });
 ```
 
-the key parameter may either be the buffer contents of the key file or the string path to the keyfile
+_Note: The `key` and the `email` are those of the service account for your GME account, to obtain a service account,
+see [this](https://developers.google.com/maps-engine/documentation/oauth/serviceaccount) document._
 
-`email` and `tableID` must be strings, primary key is optional and defaults to gx_id. 
+Once you obtain the private key, you must convert it to a pem file, with something like `openssl pkcs12 -in key.p12 -out key.pem -nodes`, where `key.p12` is the downloaded file from the Service Account and `key.pem` is the file you pass as the `key` argument. The key parameter may either be the buffer contents of the key file or the string path to the keyfile.
+
+The `email` and `tableID` arguments must be strings, `primaryKey` is optional and defaults to `'gx_id'`. 
 
 
 For create and update takes an array of features per the [create](https://developers.google.com/maps-engine/documentation/feature-create) and [update](https://developers.google.com/maps-engine/documentation/feature-update) docs.
