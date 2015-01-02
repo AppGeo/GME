@@ -9,7 +9,9 @@ All methods return promises.
 
 ```javascript
 var GME = require('gme');
+
 GME.createTable(key, email, requestObj);
+
 var table = new GME(key, email, tableID, primaryKey);
 
 table.info(); //-> info about the table
@@ -22,11 +24,15 @@ table.create(array); //-> success/failure
 table.update(array); //-> success/failure
 table.remove(array); //-> success/failure
 
+// Using bulk operations
 var bulk = table.bulk();
+
 bulk.([create|update|remove]); //-> ready for more/failure
 bulk.flush(); //-> success/failure
 
+// Using streams to write multiple rows
 var stream = table.writeStream();
+
 stream.write({
   type: 'create',
   value: {...}
