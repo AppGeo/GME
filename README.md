@@ -1,3 +1,5 @@
+# GME HAS BEEN DEPRECIATED BY GOOGLE, THERE IS NO REASON FO RYOU TO START USING THIS MODULE IF YOU HAVN'T BEEN PREVIOUSLY
+
 Google Maps Engine [![NPM version](https://badge.fury.io/js/gme.svg)](http://badge.fury.io/js/gme)
 ======
 
@@ -52,7 +54,7 @@ see [this](https://developers.google.com/maps-engine/documentation/oauth/service
 
 Once you obtain the private key, you must convert it to a pem file, with something like `openssl pkcs12 -in key.p12 -out key.pem -nodes`, where `key.p12` is the downloaded file from the Service Account and `key.pem` is the file you pass as the `key` argument. The key parameter may either be the buffer contents of the key file or the string path to the keyfile.
 
-The `email` and `tableID` arguments must be strings, `primaryKey` is optional and defaults to `'gx_id'`. 
+The `email` and `tableID` arguments must be strings, `primaryKey` is optional and defaults to `'gx_id'`.
 
 
 For create and update takes an array of features per the [create](https://developers.google.com/maps-engine/documentation/feature-create) and [update](https://developers.google.com/maps-engine/documentation/feature-update) docs.
